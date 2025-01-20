@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us Page</title>
   <link rel="stylesheet" href="aboutus.css">
+  <link rel="shortcut icon" href="/logo-white.png" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!--Tailwind CSS Implement-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+  <!--Tabler Icon Implement-->
+
 </head>
     
  <body>
@@ -29,63 +37,167 @@
        <li><a href="/signin/sign-in.html" class="navbar-link">Sign In   <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>   
    </ul>
  </nav>
-    <div id="about" class="card">
-       <img src="../Images/aboutus.jpg" class="avatar" alt="A girl on a boat">
-       <h1>About Us</h1>
-       <p>Trip Tailor is a travel agency that specializes in creating custom travel experiences for our clients. We empower millions of travelers with easy and instant travel solutions, offering a wide range of services, including flights, hotels, 
-        homestays, holiday packages, cabs, buses, and trains. Our recent expansions include successful corporate travel solutions, a travel suite for agents, and our entry into the Gulf market with tailored flight and hotel offerings.
-        Trip Tailor continues to redefine travel by connecting people and places, one journey at a time.
-       </p>
+   
+<!-- About Us Section -->
+ <section class="my-12 py-24 relative xl:mr-0 lg:mr-5 mr-0">
+    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+        <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+            <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                <div class="w-full flex-col justify-center items-start gap-8 flex">
+                    <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
+                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                            <h2
+                                class="text-gray-200 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                                More About Us</h2>
+                            <p
+                                class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                                Trip Tailor is a travel agency that specializes in creating custom travel experiences for our clients. We empower millions of travelers with easy and instant travel solutions, offering a wide range of services, including flights, hotels, homestays, holiday packages, cabs, buses, and trains.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full flex-col justify-center items-start gap-6 flex">
+                        <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-200 text-2xl font-bold font-manrope leading-9">10+ Years</h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">Dedicated to delivering exceptional travel experiences.</p>
+                            </div>
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-200 text-2xl font-bold font-manrope leading-9">100+ Trips
+                                </h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">Crafting unforgettable journeys for our clients.</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                            <div
+                                class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-200 text-2xl font-bold font-manrope leading-9">10+ Awards</h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">
+                                    Recognized for our commitment to excellence in the travel industry.
+                                </p>
+                            </div>
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-200 text-2xl font-bold font-manrope leading-9">99% Happy
+                                    Clients</h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">Mirrors our Focus on
+                                    Client Satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:justify-start justify-center items-start flex">
+                <div
+                    class="sm:w-[564px] w-full sm:h-[646px] h-full relative">
+                    <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+                        src="/Frontend/Images/aboutus.jpg" alt="about Us image" />
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+                                        
 
     <!-- footer here -->
-<footer>
-  <div class="footer-content">
-      <div class="footer-section">
-          <h3>Trip Tailor</h3>
-          <p>Personalized travel planning made easy-explore destinations and create memories.</p>
-            <div class="social-links">
-                <a href="" target="_blank" aria-label="Facebook" style="color: #4267B2;"><i class="fab fa-facebook"></i></a>
-                <a href="" target="_blank" aria-label="Twitter" style="color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
-                <a href="" target="_blank" aria-label="Instagram" style="color: #C13584;"><i class="fab fa-instagram"></i></a>
-                <a href="" target="_blank" aria-label="YouTube" style="color: #FF0000;"><i class="fab fa-youtube"></i></a>
-                <a href="" target="_blank" aria-label="Linkedin" style="color: #0077B5;"><i class="fa-brands fa-linkedin-in"></i></a>
+    <footer class="text-gray-400 body-font pb-0">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-bold text-white tracking-widest text-3xl mb-3 hover:underline decoration-wavy decoration-zinc-600	">Trip Tailor</h2>
+              <p class="text-gray-400">Personalized travel planning made easy-explore destinations and create memories.</p>
             </div>
-      </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-24">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Quick Links</h2>
+              <nav class="list-none mb-10">
+                <li class="pb-2">
+                  <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+                </li>
+                <li class="pb-2">
+                  <a href="aboutus.html" class="text-gray-400 hover:text-white">About Us</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-gray-400 hover:text-white">Our Trips</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/contact_us_page/contactus.html" class="text-gray-400 hover:text-white">Contact</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Travel Planner</h2>
+              <nav class="list-none mb-10">
+                <li class="pb-2">
+                  <a href="" class="text-gray-400 hover:text-white">Planner</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-gray-400 hover:text-white">Duration</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-gray-400 hover:text-white">Experiences</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Contact Us</h2>
+              <nav class="list-none mb-10 flex flex-col justify-center lg:items-start md:items-start sm:items-center">
+                <li class="pb-2">
+                  <a href="mailto:info@triptailor.in" target="_blank" class="text-gray-400 hover:text-white flex items-center">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail mr-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                    info@triptailor.in
+                  </a>
+                </li>
+                <li class="pb-2">
+                  <a href="https://maps.app.goo.gl/ELkJCRkEW67EGAJPA" target="_blank" class="text-gray-400 hover:text-white flex items-center">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" /><path d="M9 4v13" /><path d="M15 7v5.5" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
+                    India
+                </a>
+                </li>
+              </nav>
+            </div>
+        </div>
+        </div>
 
-      <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/Frontend/aboutUs/aboutus.html">About Us</a></li>
-              <li><a href="#content">Our Trips</a></li>
-              <li><a href="/contact_us_page/contactus.html">Contact</a></li>
-          </ul>
-      </div>
 
-      <div class="footer-section">
-          <h4>Travel Planner</h4>
-          <ul>
-              <li><a href="Trip_Recommendation_Page/Recommendation.html">Planner</a></li>
-              <li><a href="#hero">Duration</a></li>
-              <li><a href="#hero">Experiences</a></li>
-          </ul>
-      </div>
+        <div class="bg-gray-800 bg-opacity-75">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="/" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+              <img class="w-15 h-14 text-white" src="/logo-white.png" alt="logo_img">
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
+                © 2024 Trip Tailor
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
 
-      <div class="footer-section">
-          <h4 style="margin-bottom: 40px;">Contact Us</h4>
-          <ul class="contact-info" style="margin-top: -20px;">
-              <li><i class="fas fa-envelope"></i><a href="mailto:info@StandOutPlatform.edu"
-                      style="margin-left: -5px;">info@triptailor.in</a></li>
-              <li><i class="fas fa-map-marker-alt"></i><span>India</span></li>
-          </ul>
-      </div>
-  </div>
+      </footer>
 
-  <div class="footer-bottom">
-      <p> &copy; 2025 Trip Tailor, All Right Reserved</p>
-  </div>
-</footer>
+
     <script src="aboutus.js"></script>
     
  </body>
